@@ -1,0 +1,186 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@demo.com",
+      "password": "123456",
+      "name": "Admin User",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "email": "user@demo.com",
+      "password": "123456",
+      "name": "Demo User",
+      "role": "user"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Implement user authentication",
+      "description": "Create login and registration system with JWT tokens",
+      "status": "inProgress",
+      "priority": "high",
+      "assignee": {
+        "id": 1,
+        "name": "Admin User"
+      },
+      "tags": [
+        "authentication",
+        "security",
+        "backend"
+      ],
+      "createdAt": "2025-01-15T10:00:00Z",
+      "updatedAt": "2025-01-20T15:30:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Design new dashboard layout",
+      "description": "Create modern and responsive dashboard design",
+      "status": "todo",
+      "priority": "medium",
+      "assignee": {
+        "id": 2,
+        "name": "Demo User"
+      },
+      "tags": [
+        "design",
+        "ui",
+        "dashboard"
+      ],
+      "createdAt": "2025-01-16T09:00:00Z",
+      "updatedAt": "2025-01-16T09:00:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Fix critical bug in payment system",
+      "description": "Users report payment failures during checkout",
+      "status": "todo",
+      "priority": "critical",
+      "assignee": {
+        "id": 1,
+        "name": "Admin User"
+      },
+      "tags": [
+        "bug",
+        "payment",
+        "critical"
+      ],
+      "createdAt": "2025-01-18T14:00:00Z",
+      "updatedAt": "2025-01-18T14:00:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Write API documentation",
+      "description": "Document all API endpoints with examples",
+      "status": "done",
+      "priority": "medium",
+      "assignee": {
+        "id": 1,
+        "name": "Admin User"
+      },
+      "tags": [
+        "documentation",
+        "api"
+      ],
+      "createdAt": "2025-01-10T08:00:00Z",
+      "updatedAt": "2025-01-19T16:00:00Z"
+    },
+    {
+      "id": "5",
+      "title": "Setup CI/CD pipeline",
+      "description": "Configure automated testing and deployment",
+      "status": "inProgress",
+      "priority": "high",
+      "assignee": {
+        "id": 1,
+        "name": "Admin User"
+      },
+      "tags": [
+        "devops",
+        "ci/cd",
+        "automation"
+      ],
+      "createdAt": "2025-01-12T11:00:00Z",
+      "updatedAt": "2025-01-21T10:00:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Optimize database queries",
+      "description": "Improve performance of slow queries",
+      "status": "todo",
+      "priority": "low",
+      "assignee": {
+        "id": 2,
+        "name": "Demo User"
+      },
+      "tags": [
+        "database",
+        "optimization",
+        "performance"
+      ],
+      "createdAt": "2025-01-14T13:00:00Z",
+      "updatedAt": "2025-01-14T13:00:00Z"
+    },
+    {
+      "id": "86d0",
+      "title": "Test",
+      "description": "Test",
+      "status": "inProgress",
+      "priority": "critical",
+      "assignee": {
+        "id": 2,
+        "name": "Admin User"
+      },
+      "tags": [
+        "Test",
+        "frontend"
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "taskId": 1,
+      "text": "This is a sample comment",
+      "author": "Admin User",
+      "createdAt": "2025-01-20T16:00:00Z"
+    },
+    {
+      "id": 1761684639461,
+      "text": "Test",
+      "author": "Admin User",
+      "createdAt": "2025-10-28T20:50:39.461Z",
+      "taskId": 4
+    }
+  ],
+  "attachments": [
+    {
+      "id": "1",
+      "taskId": 1,
+      "name": "requirements.pdf",
+      "url": "#",
+      "size": 2048000,
+      "uploadedAt": "2025-01-20T16:30:00Z"
+    },
+    {
+      "id": 1761684644331,
+      "taskId": 4,
+      "name": "Тестовое задание.pdf",
+      "size": 134944,
+      "url": "blob:http://localhost:5173/582359dc-f539-4066-8b25-542057af8074",
+      "uploadedAt": "2025-10-28T20:50:44.331Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "1",
+      "taskId": 1,
+      "type": "status_changed",
+      "description": "Status changed from todo to inProgress",
+      "author": "Admin User",
+      "createdAt": "2025-01-20T15:30:00Z"
+    }
+  ]
+}

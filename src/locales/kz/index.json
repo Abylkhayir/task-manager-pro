@@ -1,0 +1,72 @@
+{
+  "common": {
+    "cancel": "Болдырмау",
+    "save": "Сақтау",
+    "delete": "Жою",
+    "edit": "Өңдеу",
+    "search": "Іздеу",
+    "filter": "Сүзгі",
+    "loading": "Жүктелуде...",
+    "noData": "Деректер жоқ",
+    "logout": "Шығу",
+    "theme": "Тақырып",
+    "language": "Тіл"
+  },
+  "auth": {
+    "login": "Кіру",
+    "email": "Email",
+    "password": "Құпия сөз",
+    "loginTitle": "Task Manager Pro-ға кіру",
+    "emailRequired": "Email енгізіңіз",
+    "passwordRequired": "Құпия сөзді енгізіңіз",
+    "loginError": "Авторизация қатесі"
+  },
+  "board": {
+    "title": "Канбан тақтасы",
+    "addTask": "Тапсырма қосу",
+    "todo": "Орындалуға",
+    "inProgress": "Жұмыста",
+    "done": "Орындалды",
+    "filterByStatus": "Күй бойынша сүзу",
+    "filterByAssignee": "Орындаушы бойынша сүзу",
+    "filterByPriority": "Басымдық бойынша сүзу",
+    "filterByTags": "Тегтер бойынша сүзу",
+    "allStatuses": "Барлық күйлер",
+    "allAssignees": "Барлық орындаушылар",
+    "allPriorities": "Барлық басымдықтар"
+  },
+  "task": {
+    "title": "Атауы",
+    "description": "Сипаттама",
+    "status": "Күй",
+    "assignee": "Орындаушы",
+    "priority": "Басымдық",
+    "tags": "Тегтер",
+    "createdAt": "Жасалды",
+    "updatedAt": "Жаңартылды",
+    "details": "Тапсырма мәліметтері",
+    "comments": "Түсініктемелер",
+    "attachments": "Тіркемелер",
+    "activity": "Тарих",
+    "addComment": "Түсініктеме қосу",
+    "uploadFile": "Файл жүктеу",
+    "noComments": "Түсініктемелер жоқ",
+    "noAttachments": "Тіркемелер жоқ",
+    "deleteConfirm": "Бұл тапсырманы жойғыңыз келетініне сенімдісіз бе?"
+  },
+  "priority": {
+    "low": "Төмен",
+    "medium": "Орташа",
+    "high": "Жоғары",
+    "critical": "Сыни"
+  },
+  "status": {
+    "todo": "Орындалуға",
+    "inProgress": "Жұмыста",
+    "done": "Орындалды"
+  },
+  "roles": {
+    "user": "Пайдаланушы",
+    "admin": "Әкімші"
+  }
+}

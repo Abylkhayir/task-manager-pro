@@ -1,0 +1,40 @@
+{
+  "name": "task-manager-pro",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server db.json --port 3001",
+    "ws": "node websocket-server.js",
+    "start": "concurrently \"npm run dev\" \"npm run server\" \"npm run ws\"",
+    "start:simple": "concurrently \"npm run dev\" \"npm run server\"",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@vueuse/core": "^14.0.0",
+    "ant-design-vue": "^4.2.6",
+    "axios": "^1.12.2",
+    "json-server": "^1.0.0-beta.3",
+    "pinia": "^3.0.3",
+    "sass": "^1.93.2",
+    "socket.io-client": "^4.8.1",
+    "vue": "^3.5.22",
+    "vue-i18n": "^9.14.5",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@pinia/testing": "^1.0.2",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/test-utils": "^2.4.6",
+    "concurrently": "^9.2.1",
+    "happy-dom": "^20.0.8",
+    "socket.io": "^4.8.1",
+    "vite": "^7.1.7",
+    "vitest": "^4.0.3"
+  }
+}

@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+// Dark theme styles - Claude AI inspired
+[data-theme='dark'] {
+  background-color: #1a1a1a;
+  color: #e8e8e8;
+
+  // Cards and containers
+  .ant-card {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  // Inputs and form elements
+  .ant-input,
+  .ant-select-selector,
+  .ant-textarea,
+  .ant-input-number {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+    color: #e8e8e8;
+
+    &:hover {
+      border-color: #4a4a4a;
+    }
+
+    &:focus {
+      border-color: #5a5a5a;
+      box-shadow: 0 0 0 2px rgba(90, 90, 90, 0.2);
+    }
+
+    &::placeholder {
+      color: #6a6a6a;
+    }
+  }
+
+  // Buttons
+  .ant-btn {
+    border-color: #3a3a3a;
+    
+    &:not(.ant-btn-primary):not(.ant-btn-link) {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+
+      &:hover {
+        background-color: #333333;
+        border-color: #4a4a4a;
+        color: #ffffff;
+      }
+    }
+
+    &.ant-btn-primary {
+      background-color: #4a7ba7;
+      border-color: #4a7ba7;
+
+      &:hover {
+        background-color: #5a8bb7;
+        border-color: #5a8bb7;
+      }
+    }
+
+    &.ant-btn-text {
+      color: #b8b8b8;
+
+      &:hover {
+        background-color: #333333;
+        color: #e8e8e8;
+      }
+    }
+  }
+
+  // Modals
+  .ant-modal-content {
+    background-color: #2a2a2a;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+
+  .ant-modal-header {
+    background-color: #2a2a2a;
+    border-bottom-color: #3a3a3a;
+  }
+
+  .ant-modal-title {
+    color: #e8e8e8;
+  }
+
+  .ant-modal-footer {
+    border-top-color: #3a3a3a;
+  }
+
+  // Dropdown and menus
+  .ant-dropdown-menu,
+  .ant-select-dropdown {
+    background-color: #2a2a2a;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .ant-dropdown-menu-item,
+  .ant-select-item {
+    color: #e8e8e8;
+
+    &:hover {
+      background-color: #333333;
+    }
+
+    &.ant-select-item-option-selected {
+      background-color: #3a3a3a;
+    }
+  }
+
+  // Tables and lists
+  .ant-table {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+    color: #b8b8b8;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-color: #3a3a3a;
+  }
+
+  .ant-table-tbody > tr:hover > td {
+    background-color: #333333;
+  }
+
+  .ant-list-item {
+    border-color: #3a3a3a;
+  }
+
+  // Tags
+  .ant-tag {
+    border-color: #3a3a3a;
+    
+    &:not(.ant-tag-has-color) {
+      background-color: #2a2a2a;
+      color: #e8e8e8;
+    }
+  }
+
+  // Dividers
+  .ant-divider {
+    border-color: #3a3a3a;
+  }
+
+  // Pagination
+  .ant-pagination-item {
+    background-color: #2a2a2a;
+    border-color: #3a3a3a;
+
+    a {
+      color: #e8e8e8;
+    }
+
+    &:hover {
+      border-color: #4a4a4a;
+    }
+
+    &.ant-pagination-item-active {
+      background-color: #4a7ba7;
+      border-color: #4a7ba7;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .ant-pagination-prev,
+  .ant-pagination-next {
+    button {
+      background-color: #2a2a2a;
+      border-color: #3a3a3a;
+      color: #e8e8e8;
+
+      &:hover {
+        background-color: #333333;
+        border-color: #4a4a4a;
+      }
+    }
+  }
+
+  // Spin
+  .ant-spin-dot-item {
+    background-color: #4a7ba7;
+  }
+
+  // Breadcrumb
+  .ant-breadcrumb-link {
+    color: #b8b8b8;
+
+    &:hover {
+      color: #e8e8e8;
+    }
+  }
+
+  // Tabs
+  .ant-tabs-nav {
+    &::before {
+      border-color: #3a3a3a;
+    }
+  }
+
+  .ant-tabs-tab {
+    color: #b8b8b8;
+
+    &:hover {
+      color: #e8e8e8;
+    }
+
+    &.ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        color: #4a7ba7;
+      }
+    }
+  }
+
+  .ant-tabs-ink-bar {
+    background-color: #4a7ba7;
+  }
+
+  // Empty state
+  .ant-empty-description {
+    color: #6a6a6a;
+  }
+
+  // Avatar
+  .ant-avatar {
+    background-color: #4a7ba7;
+    color: #ffffff;
+  }
+
+  // Message (notification)
+  .ant-message-notice-content {
+    background-color: #2a2a2a;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  // Custom components
+  .app-header {
+    background: #2a2a2a !important;
+    border-bottom: 1px solid #3a3a3a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .board-filters,
+  .board-pagination {
+    background: #2a2a2a !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .kanban-column {
+    background: #2a2a2a !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .column-title {
+    color: #e8e8e8;
+  }
+
+  .task-card {
+    background-color: #333333;
+    border-color: #3a3a3a;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      background-color: #3a3a3a;
+    }
+  }
+
+  .task-description,
+  .assignee-name,
+  .meta-item {
+    color: #b8b8b8 !important;
+  }
+
+  .task-footer {
+    border-top-color: #3a3a3a !important;
+  }
+
+  // Headers
+  .board-title,
+  .task-title,
+  h1, h2, h3, h4, h5, h6 {
+    color: #e8e8e8;
+  }
+}
+
+// Custom scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+
+  &:hover {
+    background: #555;
+  }
+}
+
+[data-theme='dark'] {
+  ::-webkit-scrollbar-track {
+    background: #2a2a2a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+
+    &:hover {
+      background: #5a5a5a;
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}

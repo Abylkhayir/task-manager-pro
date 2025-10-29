@@ -1,0 +1,72 @@
+{
+  "common": {
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "search": "Поиск",
+    "filter": "Сбросить фильтр",
+    "loading": "Загрузка...",
+    "noData": "Нет данных",
+    "logout": "Выйти",
+    "theme": "Тема",
+    "language": "Язык"
+  },
+  "auth": {
+    "login": "Войти",
+    "email": "Email",
+    "password": "Пароль",
+    "loginTitle": "Вход в Task Manager Pro",
+    "emailRequired": "Введите email",
+    "passwordRequired": "Введите пароль",
+    "loginError": "Ошибка авторизации"
+  },
+  "board": {
+    "title": "Канбан-доска",
+    "addTask": "Добавить задачу",
+    "todo": "К выполнению",
+    "inProgress": "В работе",
+    "done": "Выполнено",
+    "filterByStatus": "Фильтр по статусу",
+    "filterByAssignee": "Фильтр по исполнителю",
+    "filterByPriority": "Фильтр по приоритету",
+    "filterByTags": "Фильтр по тегам",
+    "allStatuses": "Все статусы",
+    "allAssignees": "Все исполнители",
+    "allPriorities": "Все приоритеты"
+  },
+  "task": {
+    "title": "Название",
+    "description": "Описание",
+    "status": "Статус",
+    "assignee": "Исполнитель",
+    "priority": "Приоритет",
+    "tags": "Теги",
+    "createdAt": "Создано",
+    "updatedAt": "Обновлено",
+    "details": "Детали задачи",
+    "comments": "Комментарии",
+    "attachments": "Вложения",
+    "activity": "История",
+    "addComment": "Добавить комментарий",
+    "uploadFile": "Загрузить файл",
+    "noComments": "Нет комментариев",
+    "noAttachments": "Нет вложений",
+    "deleteConfirm": "Вы уверены, что хотите удалить эту задачу?"
+  },
+  "priority": {
+    "low": "Низкий",
+    "medium": "Средний",
+    "high": "Высокий",
+    "critical": "Критический"
+  },
+  "status": {
+    "todo": "К выполнению",
+    "inProgress": "В работе",
+    "done": "Выполнено"
+  },
+  "roles": {
+    "user": "Пользователь",
+    "admin": "Администратор"
+  }
+}
