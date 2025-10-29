@@ -94,8 +94,6 @@ npm start            # Запуск всех сервисов (frontend + API + 
 npm run server       # Запуск сервера
 npm run build        # Production сборка
 npm test             # Запуск unit тестов
-npm run test:ui      # UI для тестов
-npm run test:coverage # Coverage тестов
 ```
 
 ## 📁 Структура проекта
